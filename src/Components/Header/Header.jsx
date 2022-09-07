@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../css/Header/Header.css'
+import '../../css/Header.css'
 import Banner from '../Banner/Banner'
 import '../../img/onda-preta.svg'
 

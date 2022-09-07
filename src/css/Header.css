@@ -59,7 +59,7 @@ header nav.menu ul.menu li a {
 div.ondaPreta {
     width: 100%;
     height: 100px;
-    background-image: url("../../img/onda-preta.svg");
+    background-image: url("../img/onda-preta.svg");
     background-size: 100%;
     background-position: top;
     background-repeat: no-repeat;
