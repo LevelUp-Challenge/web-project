@@ -10,7 +10,7 @@ const Card = (props)=>{
             return 'imgPartipante jhonathas'
         } else if (props.nome == 'Gabriel Mira') {
             return 'imgPartipante gabriel'
-        } else if (props.nome == 'Nathalia Oliveira') {
+        } else if (props.nome == 'Nathalia Lopes') {
             return 'imgPartipante nathalia'
         }
     }

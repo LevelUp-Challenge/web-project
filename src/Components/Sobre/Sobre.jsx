@@ -37,7 +37,7 @@ const Sobre = ()=>{
                             linkLinkedin="https://www.linkedin.com/in/gabriel-mira-soares-santos-86b898216"
                         />
                         <Card
-                            nome='Nathalia Oliveira'
+                            nome='Nathalia Lopes'
                             nomeGitHub='nathslopess'
                             linkGitHub='https://github.com/nathslopess'
                             nomeLinkedin="Nathalia Lopes"
