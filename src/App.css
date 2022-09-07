@@ -8,7 +8,17 @@
 html,
 body {
     height: 100%;
-    /* background-color: black; */
+    background-color: #ccc;
+}
+
+body::-webkit-scrollbar {
+    background-color: black;
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 20px;
+    
 }
 
 :root {

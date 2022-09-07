@@ -1,0 +1,24 @@
+footer {
+    width: 100%;
+    background-color: rgb(75, 75, 75);
+    padding: 15px;
+}
+
+footer>.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .patrocinadores h3 {
+    margin-bottom: 10px;
+}
+
+footer .patrocinadores>div {
+    display: flex;
+}
+
+footer .patrocinadores>div img {
+    height: 50px;
+    margin-right: 10px;
+}
