@@ -1,7 +1,7 @@
 section.banner {
     width: 100%;
-    height: 80%;
-    position: absolute;
+    height: 500px;
+    position: relative;
     top: 0;
     left: 0;
     z-index: 2;
@@ -13,8 +13,8 @@ section.banner .img {
     width: 100%;
     height: 100%;
     background-image: url("../../img/banner.png");
-    background-size: contain;
-    background-position: left;
+    background-size: 70%;
+    background-position: left top;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -32,11 +32,12 @@ section.banner .texto {
 section.banner .texto h1 {
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 55px;
+    font-size: 3em;
 }
 
 section.banner .texto h1 span:first-of-type {
-    font-size: 86px;
+    font-size: 1.5em;
+    display: block;
 }
 
 section.banner .texto h1 span:last-of-type {
@@ -44,6 +45,6 @@ section.banner .texto h1 span:last-of-type {
 }
 
 section.banner .texto p {
-    font-size: 23px;
-    padding-left: 10px
+    font-size: 1.3em;
+    padding-top: 5px;
 }
