@@ -8,17 +8,16 @@ const App = ()=>{
         <>
             <Banner />
             <header>
-                <div class="container">
-                    <div class="logo">LevelUp Experience</div>
-                    <nav class="menu">
-                        <ul class="menu">
+                <div className="container">
+                    <div className="logo">LevelUp Experience</div>
+                    <nav className="menu">
+                        <ul className="menu">
                             <li><a href="">Página Inicial</a></li>
                             <li><a href=""><span>Fazer Login</span></a></li>
                         </ul>
                     </nav>
                 </div>
-            </header>
-            <div className="ondaPreta"></div>       
+            </header>     
         </>
     )
 };

@@ -16,7 +16,7 @@ section.banner .img {
     background-size: 70%;
     background-position: left top;
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
 }
 
 section.banner .texto {

@@ -5,10 +5,10 @@ import '../../img/banner.png'
 const Banner = ()=>{
     return (
         <>
-            <section class="banner">
-                <div class="img">
-                    <div class="container">
-                        <div class="texto ">
+            <section className="banner">
+                <div className="img">
+                    <div className="container">
+                        <div className="texto ">
                             <h1><span>Aproximando</span>pessoas e <span>conexões</span>!</h1>
                             <p>O sistema que conecta o candidato do recrutador.</p>
                         </div>
