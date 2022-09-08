@@ -1,0 +1,12 @@
+section.cadastro {
+    height: 100vh;
+    background-color: black;
+    background-repeat: repeat;
+}
+section.cadastro form {
+    width: 500px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

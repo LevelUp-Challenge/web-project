@@ -28,14 +28,3 @@ section.login .form form a {
     color: blue;
 }
 
-section.login .form input[type='submit'] {
-    margin-top: 15px;
-    width: 100%;
-    padding: 10px 0;
-    font-size: 16px;
-    border-radius: 20px;
-    font-weight: bold;
-    background-color: var(--roxo);
-    cursor: pointer;
-    text-transform: uppercase;
-}

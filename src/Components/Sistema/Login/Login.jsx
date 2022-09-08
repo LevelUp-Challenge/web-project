@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import '../../../css/Login.css'
-import Input from './Input';
+import Input from '../Input';
+import Submit from '../Submit';
 
 const Login = ()=>{
     return (
@@ -23,8 +24,14 @@ const Login = ()=>{
                             label='Senha'
                         />
                         <a href="">Esqueci a senha.</a>
-                        <input type="submit" value="Logar" />
-                        <Link to='/cadastro'><input type="submit" value="Cadastrar" /></Link>
+                        <Submit 
+                            destino=''
+                            valor='Logar'
+                        />
+                        <Submit 
+                            destino='/cadastro'
+                            valor='Fazer cadastro'
+                        />
                     </form>
                 </div>
             </section>
