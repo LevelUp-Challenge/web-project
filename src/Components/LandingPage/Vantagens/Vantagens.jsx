@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../css/Vantagens.css'
+import '../../../css/Vantagens.css'
 import Box from './Box';
 
 const Vantagem = ()=>{

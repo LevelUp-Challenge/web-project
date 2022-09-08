@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../css/Sobre.css'
+import '../../../css/Sobre.css'
 import Card from './Card'
 
 const Sobre = ()=>{

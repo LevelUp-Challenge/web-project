@@ -1,17 +1,12 @@
 import React from 'react'
 import './App.css'
-import Header from './Components/Header/Header'
-import Sobre from './Components/Sobre/Sobre';
-import Vantagem from './Components/Vantagens/Vantagens';
-import Footer from './Components/Footer/Footer';
+import LandingPage from './Components/LandingPage/LandingPage';
+
 
 function App() {
   return (
     <>
-      <Header />
-      <Sobre />
-      <Vantagem />
-      <Footer />
+      <LandingPage />
     </>
   );
 }

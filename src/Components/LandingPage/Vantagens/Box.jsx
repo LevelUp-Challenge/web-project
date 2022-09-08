@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../css/Box.css'
+import '../../../css/Box.css'
 
 const Box = (props)=>{
 

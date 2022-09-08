@@ -1,7 +1,7 @@
 import React from 'react'
-import Fiap from '../../img/fiap.png'
-import Ibm from '../../img/ibm.jpg'
-import '../../css/Footer.css'
+import Fiap from '../../../img/fiap.png'
+import Ibm from '../../../img/ibm.jpg'
+import '../../../css/Footer.css'
 
 const Footer = ()=>{
     return(
