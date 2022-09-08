@@ -1,7 +1,10 @@
 div.inputSingle {
     width: 100%;
-    margin: 35px 0 10px 0;
+    margin-bottom: 40px;
     position: relative;
+}
+div.inputSingle:last-of-type {
+    margin-bottom: 10px;
 }
 
 div.inputSingle label {

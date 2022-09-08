@@ -1,7 +1,9 @@
 section.cadastro {
     height: 100vh;
     background-color: black;
-    background-repeat: repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    /* background-repeat: repeat; */
 }
 section.cadastro form {
     width: 500px;
