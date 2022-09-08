@@ -29,7 +29,7 @@ const Login = ()=>{
                             valor='Logar'
                         />
                         <Submit 
-                            destino='/cadastro'
+                            destino='/cadastro-usuario'
                             valor='Fazer cadastro'
                         />
                     </form>

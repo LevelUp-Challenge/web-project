@@ -5,7 +5,7 @@ import Login from './Login/Login';
 const Sistema = ()=>{
     return (
         <>
-            <Login />
+            
         </>
     )
 };
