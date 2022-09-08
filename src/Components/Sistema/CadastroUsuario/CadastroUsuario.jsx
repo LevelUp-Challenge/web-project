@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../../css/Cadastro.css'
+import '../../../css/CadastroUsuario.css'
 import Input from '../Input';
 import Submit from '../Submit';
 
