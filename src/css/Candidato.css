@@ -1,0 +1,30 @@
+section.candidato {
+    padding: 20px 0;
+}
+
+section.candidato .box {
+    width: 100%;
+    padding: 13px;
+}
+
+section.candidato .box h3 {
+    font-size: 1.3em;
+    padding-left: 7px;
+    position: relative;
+}
+
+section.candidato .box h3::before {
+    content: '';
+    width: 3px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--roxo);
+}
+
+section.candidato .box form {
+    width: 100%;
+    max-width: 500px;
+    margin: 25px auto;
+}
