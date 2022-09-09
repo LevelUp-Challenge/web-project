@@ -8,6 +8,8 @@ const CadastroUsuario = ()=>{
         <>
             <section className="cadastro">
                 <form action="">
+                    <h2>Olá, tudo bem?</h2>
+                    <h2>Para começarmos e você ter acesso ao <span>LevelUp</span>, por favor faça o cadastro no nosso sistema:</h2>
                     <Input
                         type='text'
                         nome='nome'
