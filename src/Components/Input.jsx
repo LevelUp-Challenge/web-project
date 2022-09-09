@@ -14,7 +14,14 @@ const Input = (props)=>{
     return(
         <>
             <div className="inputSingle">
-                <input type={props.type} id={props.nome} name={props.nome} className={background(props)} required />
+                <input 
+                    type={props.type} 
+                    id={props.nome} 
+                    name={props.nome} 
+                    className={background(props)} 
+                    placeholder={props.placeholder}
+                    required 
+                />
                 <label htmlFor={props.nome}>{props.label}</label>
             </div>
         </>

@@ -8,4 +8,5 @@ input[type='submit'] {
     background-color: var(--roxo);
     cursor: pointer;
     text-transform: uppercase;
+    border: 1px solid black;
 }
