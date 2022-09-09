@@ -31,21 +31,6 @@ main.conteudo header nav ul li a {
     color: black;
 }
 
-main.conteudo section.boasVindas {
-    width: 100%;
-    max-width: 500px;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-main.conteudo section.boasVindas h1 {
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 50px;
-}
-
-main.conteudo section.boasVindas h1 span {
-    color: rgb(82, 113, 255);
+section.float {
+    float: left;
 }

@@ -7,9 +7,10 @@ const Menu = ()=>{
             <section className="menu">
                 <nav>
                     <ul>
-                        <li><a href="">Teste</a></li>
-                        <li><a href="">Teste</a></li>
-                        <li><a href="">Teste</a></li>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Recrutador</a></li>
+                        <li><a href="">Candidato</a></li>
+                        <li><a href="">Administração</a></li>
                     </ul>
                 </nav>
             </section>

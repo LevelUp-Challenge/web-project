@@ -1,5 +1,7 @@
 import React from "react";
+import { Routes, Route, Link } from "react-router-dom";
 import '../../css/Conteudo.css'
+import BoasVindas from "./BoasVindas";
 
 const Conteudo = ()=>{
     return(
@@ -8,15 +10,12 @@ const Conteudo = ()=>{
                 <header>
                     <nav>
                         <ul>
-                            <li><a href="">Editar CV</a></li>
-                            <li><a href="">Editar Perfil</a></li>
+                            <li><Link to='/login'>Sair</Link></li>
                         </ul>
                     </nav>
                     <div class="clear"></div>
                 </header>
-                <section class="boasVindas">
-                    <h1>Olá <span>Candidato</span>, Seja Bem Vindo</h1>
-                </section>
+                <BoasVindas />
             </main>
         </>
     )
