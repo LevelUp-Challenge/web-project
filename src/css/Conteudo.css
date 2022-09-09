@@ -1,0 +1,51 @@
+main.conteudo {
+    width: calc(100% - 175px);
+    height: 100vh;
+    float: left;
+    overflow: auto;
+    
+}
+
+main.conteudo header {
+    width: 100%;
+    background-color: rgb(226, 226, 226);
+    padding: 13px;
+    position: relative;
+    z-index: 2;
+}
+
+main.conteudo header nav {
+    float: right;
+}
+
+main.conteudo header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+main.conteudo header nav ul li {
+    margin: 0 15px;
+}
+
+main.conteudo header nav ul li a {
+    color: black;
+}
+
+main.conteudo section.boasVindas {
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main.conteudo section.boasVindas h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+}
+
+main.conteudo section.boasVindas h1 span {
+    color: rgb(82, 113, 255);
+}
