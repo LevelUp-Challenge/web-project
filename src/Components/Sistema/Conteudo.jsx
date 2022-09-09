@@ -1,7 +1,10 @@
 import React from "react";
 import { Routes, Route, Link, BrowserRouter } from "react-router-dom";
 import '../../css/Conteudo.css'
+import Administracao from "./Administracao/Administracao";
+import Candidato from "./Candidato/Candidato";
 import BoasVindas from "./Home/BoasVindas";
+import Recrutador from "./Recrutador/Recrutador";
 
 const Conteudo = ()=>{
     return(
@@ -15,7 +18,10 @@ const Conteudo = ()=>{
                     </nav>
                     <div class="clear"></div>
                 </header>
-                <BoasVindas />
+                {/* <BoasVindas /> */}
+                <Recrutador />
+                <Candidato />
+                <Administracao />
             </main>
         </>
     )
