@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import '../../css/Submit.css'
+import '../css/Submit.css'
 
 const Submit = (props)=>{
     return (

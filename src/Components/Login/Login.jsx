@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import '../../../css/Login.css'
+import '../../css/Login.css'
 import Input from '../Input';
 import Submit from '../Submit';
 
@@ -25,7 +25,7 @@ const Login = ()=>{
                         />
                         <a href="">Esqueci a senha.</a>
                         <Submit 
-                            destino=''
+                            destino='/levelup'
                             valor='Logar'
                         />
                         <Submit 
