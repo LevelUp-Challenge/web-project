@@ -28,7 +28,12 @@ div.inputSingle .inputText {
     border-bottom: 2px solid gray;
     outline: 0;
     font-size: 16px;
+}
+div.inputSingle .inputText.bgBlack {
     background-color: black;
+}
+div.inputSingle .inputText.bgWhite {
+    background-color: white;
 }
 
 div.inputSingle .inputText:focus,

@@ -14,21 +14,25 @@ const CadastroUsuario = ()=>{
                         type='text'
                         nome='nome'
                         label='Nome Completo'
+                        cor='black'
                     />
                     <Input
                         type='email'
                         nome='email'
                         label='Email'
+                        cor='black'
                     />
                     <Input
                         type='password'
                         nome='senha'
                         label='Senha'
+                        cor='black'
                     />
                     <Input
                         type='password'
                         nome='senha'
                         label='Confirme a senha'
+                        cor='black'
                     />
                     <Submit 
                         destino='/login'

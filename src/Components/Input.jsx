@@ -2,10 +2,19 @@ import React from 'react'
 import '../css/Input.css'
 
 const Input = (props)=>{
+
+    function background(props) {
+        if (props.cor == 'black') {
+            return 'inputText bgBlack'
+        }else if (props.cor == 'white') {
+            return 'inputText bgWhite'
+        }
+    }
+
     return(
         <>
             <div className="inputSingle">
-                <input type={props.type} id={props.nome} name={props.nome} className='inputText' required />
+                <input type={props.type} id={props.nome} name={props.nome} className={background(props)} required />
                 <label htmlFor={props.nome}>{props.label}</label>
             </div>
         </>

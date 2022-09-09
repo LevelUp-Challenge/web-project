@@ -17,11 +17,13 @@ const Login = ()=>{
                             type='text'
                             nome='login'
                             label='Label'
+                            cor='black'
                         />
                         <Input 
                             type='password'
                             nome='senha'
                             label='Senha'
+                            cor='black'
                         />
                         <a href="">Esqueci a senha.</a>
                         <Submit 

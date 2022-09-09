@@ -19,8 +19,8 @@ const Conteudo = ()=>{
                     <div class="clear"></div>
                 </header>
                 {/* <BoasVindas /> */}
-                <Recrutador />
-                <Candidato />
+                {/* <Recrutador />
+                <Candidato /> */}
                 <Administracao />
             </main>
         </>
