@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../../css/Box.css'
+import { DivBoxes } from '../../../style/styled';
 
 const Box = (props)=>{
 
@@ -12,11 +12,13 @@ const Box = (props)=>{
     }
 
     return(
-        <>
-            <div className={lado(props)}>
-                <h3>Titulo</h3>
-                <p>Descrição</p>
-            </div>
+        <>            
+            <DivBoxes>
+                <div className={lado(props)}>
+                    <h3>Titulo</h3>
+                    <p>Descrição</p>
+                </div>
+            </DivBoxes>
         </>
     )
 };

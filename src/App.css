@@ -57,3 +57,11 @@ h2.title:hover::before {
 .flex {
     display: flex;
 }
+.ondaPreta {
+    width: 100%;
+    height: 100px;
+    background-image: url("./img/onda-preta.svg");
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+}

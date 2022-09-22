@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../../css/Card.css'
+import { DivParticipantes } from '../../../style/styled'
 
 const Card = (props)=>{
     
@@ -17,7 +17,7 @@ const Card = (props)=>{
 
     return(
         <>
-            <div className="participantes">
+            <DivParticipantes>
                 <div className="flex">
                     <div className={classFoto(props)}></div>
                     <div className="infos">
@@ -26,7 +26,7 @@ const Card = (props)=>{
                         <p><b>Linkedin: </b><a href={props.linkLinkedin} target="_blank">{props.nomeLinkedin}</a></p>
                     </div>
                 </div>
-            </div>
+            </DivParticipantes>
         </>
     )
 }

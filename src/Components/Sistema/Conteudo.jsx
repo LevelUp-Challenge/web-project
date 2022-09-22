@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route, Link, BrowserRouter } from "react-router-dom";
+import { Link } from "react-router-dom";
 import '../../css/Conteudo.css'
 import Administracao from "./Administracao/Administracao";
 import Candidato from "./Candidato/Candidato";
