@@ -1,13 +1,12 @@
 import React from 'react'
-import '../../css/CadastroUsuario.css'
+import { SectionCadastro } from '../../style/styled';
 import Input from '../Form/Input';
 import Submit from '../Form/Submit';
 
 const CadastroUsuario = ()=>{
     return(
-        <>
-            <section className="cadastro">
-                <form action="">
+        <SectionCadastro>
+            <form action="">
                     <h2>Olá, tudo bem?</h2>
                     <h2>Para começarmos e você ter acesso ao <span>LevelUp</span>, por favor faça o cadastro no nosso sistema:</h2>
                     <Input
@@ -39,8 +38,7 @@ const CadastroUsuario = ()=>{
                         valor='Cadastrar'
                     />
                 </form>
-            </section>
-        </>
+        </SectionCadastro>
     )
 };
 

@@ -1,14 +1,13 @@
 import React from "react";
-import '../../../css/Administracao.css'
+import { SectionAdministracao } from "../../../style/styled";
 import Input from "../../Form//Input";
 import Submit from "../../Form/Submit";
 import TextArea from "../../Form/TextArea";
 
 const Administracao = () => {
     return (
-        <>
-            <section className="administracao">
-                <div className="container">
+        <SectionAdministracao>
+            <div className="container">
                     <div className="box">
                         <h3>Cadastro de Recrutadores</h3>
                         <form action="">
@@ -71,8 +70,7 @@ const Administracao = () => {
                         </form>
                     </div>
                 </div>
-            </section>
-        </>
+        </SectionAdministracao>
     )
 }
 

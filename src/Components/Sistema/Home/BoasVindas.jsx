@@ -1,13 +1,11 @@
 import React from "react";
-import '../../../css/BoasVindas.css'
+import { SectionBoasVindas } from "../../../style/styled";
 
 const BoasVindas = ()=>{
     return(
-        <>
-            <section class="boasVindas">
-                <h1>Olá <span>Candidato/Recrutador</span>, Seja Bem Vindo</h1>
-            </section>
-        </>
+        <SectionBoasVindas>
+             <h1>Olá <span>Candidato/Recrutador</span>, Seja Bem Vindo</h1>
+        </SectionBoasVindas>
     )
 };
 

@@ -1,15 +1,15 @@
 import React from 'react'
-import '../../css/Sistema.css'
+import { SectionSistema } from '../../style/styled';
 import Conteudo from './Conteudo';
 import Menu from './Menu';
 
 const Sistema = ()=>{
     return (
-        <>
+        <SectionSistema>
             <Menu />
             <Conteudo />
             <div className="clear"></div>
-        </>
+        </SectionSistema>
     )
 };
 

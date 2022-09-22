@@ -1,5 +1,5 @@
 - Arrumar imagens do site
 - Alterar nome da pasta de 'Sobre' para 'Card'
 - Alterar nome da pasta de 'Vantagens' para 'Box'
-- Levar componentes TextArea para a pasta Forms
-- Arrumar cor de fundo do textarea do sistema
+- Arrumar cor de fundo das boxes do sistema
+- Colocar o componente Menu e Conteudo em suas devidas pastas

@@ -274,7 +274,7 @@ export const DivinputSingle = styled.div`
         background-color: black;
     }
     .inputText.bgWhite {
-        background-color: #ccc;
+        background-color: white;
     }
     .inputText:focus,
     .inputText:valid {
@@ -332,3 +332,208 @@ export const DivtextAreaSingle = styled.div`
         }
     }
 `;
+
+export const SectionAdministracao = styled.section`
+    padding: 20px 0;
+    .box {
+        width: 100%;
+        padding: 13px;
+        h3 {
+            font-size: 1.3em;
+            padding-left: 7px;
+            position: relative;
+            ::before {
+                content: '';
+                width: 3px;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                background-color: var(--roxo);
+            }
+        }
+        form {
+            width: 100%;
+            max-width: 500px;
+            margin: 25px auto;
+        }
+    }
+`;
+
+export const SectionCandidato = styled.section`
+    padding: 20px 0;
+    .box {
+        width: 100%;
+        padding: 13px;
+        h3 {
+            font-size: 1.3em;
+            padding-left: 7px;
+            position: relative;
+            ::before {
+                content: '';
+                width: 3px;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                background-color: var(--roxo);
+            }
+        }
+        form {
+            width: 100%;
+            max-width: 500px;
+            margin: 25px auto;
+        }
+    }
+`;
+
+export const SectionBoasVindas = styled.section`
+    width: 100%;
+    max-width: 680px;
+    position: relative;
+    top: calc(50% - 18px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    h1 {
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 50px;
+        span {
+            color: rgb(82, 113, 255);
+        }
+    }
+`;
+
+export const SectionRecrutador = styled.section`
+    padding: 20px 0;
+    .box {
+        width: 100%;
+        padding: 13px;
+        h3 {
+            font-size: 1.3em;
+            padding-left: 7px;
+            position: relative;
+            ::before {
+                content: '';
+                width: 3px;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                background-color: var(--roxo);
+            }
+        }
+        form {
+            width: 100%;
+            max-width: 500px;
+            margin: 25px auto;
+        }
+    }
+`;
+
+export const SectionMenu = styled.section`
+    width: 175px;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgb(82, 113, 255);
+    padding: 20px 0;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    ::-webkit-scrollbar {
+        background-color: rgb(82, 113, 255);
+        width: 10PX;
+    }
+    ::-webkit-scrollbar-button {
+        display: none;
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: rgba(2, 0, 36, 1);
+        border-radius: 20PX;
+    }
+    nav ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        li {
+            width: 100%;            
+            display: flex;
+            :hover {
+                background-color: rgb(10, 0, 201);
+            }
+            a {
+                color: black;
+                padding: 20px 0;
+                text-decoration: none;
+                width: 100%;
+            }
+            :hover a {
+                text-decoration: underline;
+                color: #ccc;
+            }
+        }
+    }
+`;
+
+export const MainConteudo = styled.main`
+    width: calc(100% - 175px);
+    height: 100vh;
+    float: left;
+    overflow: auto;
+    header {
+        width: 100%;
+        background-color: rgb(226, 226, 226);
+        padding: 13px;
+        position: relative;
+        z-index: 2;
+        nav {
+            float: right;
+            ul {
+                list-style: none;
+                display: flex;
+                li {
+                    margin: 0 15px;
+                    a {
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+    section.float {
+        float: left;
+    }
+`;
+
+export const SectionSistema = styled.section`
+    .clear {
+        clear: both;
+    }
+`;
+
+export const SectionCadastro = styled.section`
+    height: 100vh;
+    background-color: black;
+    background-size: 100%;
+    background-attachment: fixed;
+    form {
+        width: 450px;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        h2 {
+            color: white;
+            margin-bottom: 25px;
+            font-size: 1.4em;
+            span {
+                color: var(--roxo);
+            }
+        }
+    }
+`

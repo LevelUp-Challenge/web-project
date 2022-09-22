@@ -1,5 +1,5 @@
 import React from "react";
-import '../../../css/Recrutador.css'
+import { SectionRecrutador } from "../../../style/styled";
 import CheckBox from "../../Form/CheckBox";
 import Input from "../../Form/Input";
 import Submit from "../../Form/Submit";
@@ -7,8 +7,7 @@ import TextArea from "../../Form/TextArea";
 
 const Recrutador = ()=>{
     return(
-        <>
-        <section className="recrutador">
+        <SectionRecrutador>
             <div className="container">
                 <div className="box">
                     <h3>Cadastro de processos seletivos</h3>
@@ -83,8 +82,7 @@ const Recrutador = ()=>{
                     </form>
                 </div>
             </div>
-        </section>
-        </>
+        </SectionRecrutador>
     )
 }
 

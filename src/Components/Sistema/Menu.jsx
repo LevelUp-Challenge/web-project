@@ -1,12 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import '../../css/Menu.css'
+import { SectionMenu } from "../../style/styled";
 
 const Menu = ()=>{
     return (
-        <>
-            <section className="menu">
-                <nav>
+        <SectionMenu>
+            <nav>
                     <ul>
                         <li><Link to='/'>Home</Link></li>
                         <li><Link to='/'>Recrutador</Link></li>
@@ -14,8 +13,7 @@ const Menu = ()=>{
                         <li><Link to='/'>Administração</Link></li>
                     </ul>
                 </nav>
-            </section>
-        </>
+        </SectionMenu>
     )
 };
 
