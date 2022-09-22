@@ -1,3 +1,4 @@
 - Arrumar imagens do site
 - Alterar nome da pasta de 'Sobre' para 'Card'
 - Alterar nome da pasta de 'Vantagens' para 'Box'
+- Levar componentes CheckBox, Submit, TextArea para a pasta Forms

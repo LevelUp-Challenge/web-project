@@ -1,7 +1,7 @@
 import React from "react";
 import '../../../css/Candidato.css'
 import CheckBox from "../../CheckBox";
-import Input from "../../Input";
+import Input from "../../Form/Input";
 import Submit from "../../Submit";
 import TextArea from "../../TextArea";
 

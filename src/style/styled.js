@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+// *-- Estilização da Landing Page
 export const Header = styled.header`
     background-color: transparent;
     padding: 15px 2%;
@@ -207,4 +208,85 @@ export const SectionFooter = styled.section`
             }
         }
     }
-`
+`;
+
+// *-- Estilização da tela de Login
+
+export const SectionLogin = styled.section`
+    display: flex;
+    height: 100vh;
+    .foto {
+        width: 70%;
+        height: 100%;
+        /* background-color: red; */
+        padding: 15px;
+    }
+    .form {
+        width: 30%;
+        height: 100%;
+        background-color: black;
+        background-attachment: fixed;
+        padding: 15px;
+        form {
+            width: 100%;
+            max-width: 300px;
+            position: relative;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            a {
+                font-size: 0.8em;
+                color: blue;
+            }
+        }
+    }
+`;
+
+export const DivinputSingle = styled.div`
+    width: 100%;
+    margin-top: 35px;
+    position: relative;
+    :first-of-type {
+    margin-top: 0;
+    }
+    :last-of-type {
+        margin-bottom: 10px
+    }
+    label {
+        font-size: 16px;
+        position: absolute;
+        left: 5px;
+        bottom: 6px;
+        color: gray;
+        cursor: text;
+        transition: 0.5s ease-in-out;
+    }
+    .inputText {
+        width: 100%;
+        padding: 5px;
+        color: gray;
+        border: 0;
+        border-bottom: 2px solid gray;
+        outline: 0;
+        font-size: 16px;
+    }
+    .inputText.bgBlack {
+        background-color: black;
+    }
+    .inputText.bgWhite {
+        background-color: white;
+    }
+    .inputText:focus,
+    .inputText:valid {
+        border-bottom: 2px solid var(--roxo);
+    }
+    .inputText:focus~label,
+    .inputText:valid~label {
+        transform: translateY(-27px);
+        font-size: 14px;
+        color: var(--roxo);
+        left: 0;
+        font-weight: bold;
+    }
+
+`;

@@ -1,6 +1,6 @@
 import React from 'react'
 import '../../css/CadastroUsuario.css'
-import Input from '../Input';
+import Input from '../Form/Input';
 import Submit from '../Submit';
 
 const CadastroUsuario = ()=>{
