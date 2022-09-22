@@ -1,9 +1,9 @@
 import React from "react";
 import '../../../css/Candidato.css'
-import CheckBox from "../../CheckBox";
+import CheckBox from "../../Form/CheckBox";
 import Input from "../../Form/Input";
-import Submit from "../../Submit";
-import TextArea from "../../TextArea";
+import Submit from "../../Form/Submit";
+import TextArea from "../../Form/TextArea";
 
 const Candidato = () => {
     return (

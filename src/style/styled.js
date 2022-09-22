@@ -274,7 +274,7 @@ export const DivinputSingle = styled.div`
         background-color: black;
     }
     .inputText.bgWhite {
-        background-color: white;
+        background-color: #ccc;
     }
     .inputText:focus,
     .inputText:valid {
@@ -289,4 +289,46 @@ export const DivinputSingle = styled.div`
         font-weight: bold;
     }
 
+`;
+
+export const DivCheckBoxSingle = styled.div`
+    margin: 20px 0 0 0;
+    label {
+        padding-left: 7px;
+        font-size: 0.9em;
+    }
+`;
+
+export const DivSubmit = styled.div`
+    input[type='submit'] {
+        margin-top: 15px;
+        width: 100%;
+        padding: 10px 0;
+        font-size: 16px;
+        border-radius: 20px;
+        font-weight: bold;
+        background-color: var(--roxo);
+        cursor: pointer;
+        text-transform: uppercase;
+        border: 1px solid black;
+    }
+`;
+
+export const DivtextAreaSingle = styled.div`
+    margin-top: 40px;
+    width: 100%;
+    textarea {
+        width: 100%;
+        height: 100%;
+        resize: vertical;
+        width: 100%;
+        height: 150px;
+        border: 2px solid gray;
+        padding: 7px;
+        outline: 0;
+        font-size: 16px;
+        :focus {
+            border: 2px solid var(--roxo);
+        }
+    }
 `;

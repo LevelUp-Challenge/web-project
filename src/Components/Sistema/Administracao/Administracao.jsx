@@ -1,8 +1,8 @@
 import React from "react";
 import '../../../css/Administracao.css'
 import Input from "../../Form//Input";
-import Submit from "../../Submit";
-import TextArea from "../../TextArea";
+import Submit from "../../Form/Submit";
+import TextArea from "../../Form/TextArea";
 
 const Administracao = () => {
     return (

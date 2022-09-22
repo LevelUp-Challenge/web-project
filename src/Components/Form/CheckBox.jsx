@@ -1,13 +1,13 @@
 import React from 'react';
-import '../css/CheckBox.css'
+import { DivCheckBoxSingle } from '../../style/styled';
 
 const CheckBox = (props)=>{
     return(
         <>
-            <div className="checkBoxSingle">
+            <DivCheckBoxSingle>
                 <input type="checkbox" name={props.nome} id={props.nome} />
                 <label htmlFor={props.nome}>{props.label}</label>
-            </div>
+            </DivCheckBoxSingle>
         </>
     )
 };

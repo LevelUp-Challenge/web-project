@@ -1,7 +1,7 @@
 import React from 'react'
 import { SectionLogin } from '../../style/styled';
 import Input from '../Form/Input';
-import Submit from '../Submit';
+import Submit from '../Form/Submit';
 
 const Login = ()=>{
     return (

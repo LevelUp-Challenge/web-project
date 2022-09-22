@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../css/CadastroUsuario.css'
 import Input from '../Form/Input';
-import Submit from '../Submit';
+import Submit from '../Form/Submit';
 
 const CadastroUsuario = ()=>{
     return(
