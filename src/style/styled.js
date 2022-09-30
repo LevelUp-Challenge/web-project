@@ -1,4 +1,9 @@
 import styled from "styled-components";
+import ImgBanner from '../img/banner.png'
+import ImgJhonathas from '../img/jhonathas.png'
+import ImgVinicius from '../img/vinicius.jpg'
+import ImgGabriel from '../img/gabriel.jpg'
+import ImgNathalia from '../img/nathalia.png'
 
 // *-- Estilização da Landing Page
 export const Header = styled.header`
@@ -64,7 +69,7 @@ export const SectionBanner = styled.section`
     .img {
         width: 100%;
         height: 100%;
-        background-image: url("../img/banner.png");
+        background-image: url(${ImgBanner});
         background-size: 70%;
         background-position: left top;
         background-repeat: no-repeat;
@@ -141,21 +146,21 @@ export const DivParticipantes = styled.div`
         margin-left: 10px;
     }
     .imgPartipante.jhonathas {
-        background-image: url('../img/jhonathas.png');
+        background-image: url(${ImgJhonathas});
         background-size: 100%;
     }
     .imgPartipante.vinicius {
-        background-image: url('../img/vinicius.jpg');
+        background-image: url(${ImgVinicius});
         background-size: 100%;
         background-position: 50% 30%;
     }
     .imgPartipante.gabriel {
-        background-image: url('../img/gabriel.jpg');
+        background-image: url(${ImgGabriel});
         background-size: 100%;
         background-position: 50% 50%;
     }
     .imgPartipante.nathalia {
-        background-image: url('../img/nathalia.png');
+        background-image: url(${ImgNathalia});
         background-size: 100%;
         background-position: 50% 50%;
     }

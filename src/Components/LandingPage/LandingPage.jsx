@@ -76,11 +76,31 @@ const LandingPage = ()=>{
                 <div className="container">
                     <h2 className="title">Vantagens</h2>
                     <div className="boxs">
-                        <Box lado='left' />
-                        <Box lado='right' />
-                        <Box lado='left' />
-                        <Box lado='right' />
-                        <Box lado='left' />
+                        <Box 
+                            lado='left' 
+                            titulo='Exemplo de título de vantagem'
+                            descricao='Exemplo de descrição de vantagem'
+                        />
+                        <Box 
+                            lado='right' 
+                            titulo='Exemplo de título de vantagem'
+                            descricao='Exemplo de descrição de vantagem'
+                        />
+                        <Box 
+                            lado='left' 
+                            titulo='Exemplo de título de vantagem'
+                            descricao='Exemplo de descrição de vantagem'
+                        />
+                        <Box 
+                            lado='right' 
+                            titulo='Exemplo de título de vantagem'
+                            descricao='Exemplo de descrição de vantagem'
+                        />
+                        <Box 
+                            lado='left' 
+                            titulo='Exemplo de título de vantagem'
+                            descricao='Exemplo de descrição de vantagem'
+                        />
                         <div className="clear"></div>
                     </div>
                 </div>
