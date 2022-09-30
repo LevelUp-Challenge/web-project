@@ -14,7 +14,7 @@ const Login = ()=>{
                     <Input 
                         type='text'
                         nome='login'
-                        label='Label'
+                        label='Login'
                         cor='black'
                     />
                     <Input 

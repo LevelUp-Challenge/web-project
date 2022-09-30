@@ -393,21 +393,91 @@ export const SectionCandidato = styled.section`
 `;
 
 export const SectionBoasVindas = styled.section`
+    section.vagas {
+    display: flex;
+    padding: 50px 0;
+}
+section.vagas .painelVagas .groupVagas .vaga button {
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: rgba(2, 0, 36, 1);
+    background-color: rgb(82, 113, 255);
+    
+}
+section.vagas .painelVagas .groupVagas .vaga button:hover {
+    background-color: rgba(2, 0, 36, 1);
+    color: #fff;
+    
+}
+section.vagas .filtros {
+    width: 30%;
+    padding: 20px;
+    border-right: 2px solid rgb(82, 113, 255);
+}
+section.vagas .filtros button {
     width: 100%;
-    max-width: 680px;
-    position: relative;
-    top: calc(50% - 18px);
-    left: 50%;
-    transform: translate(-50%, -50%);
-    h1 {
-        text-align: center;
-        font-family: 'Courier New', Courier, monospace;
-        font-size: 50px;
-        span {
-            color: rgb(82, 113, 255);
-        }
-    }
+    margin: 15px 0;
+    padding: 7px 0;
+    font-size: 20px;
+    background-color: rgb(82, 113, 255);
+    border-color: rgba(2, 0, 36, 1);
+    cursor: pointer;
+    transition: 0.3s;
+}
+section.vagas .filtros button:hover {
+    background-color: rgba(2, 0, 36, 1);
+    color: white;
+}
+section.vagas .filtros ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+    border-bottom: 1px dotted black;
+}
+section.vagas .filtros ul:last-of-type {
+    border-bottom: 0;
+}
+
+section.vagas .filtros ul li:first-of-type {
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+section.vagas .filtros ul li input {
+    margin-right: 7px;
+}
+section.vagas .painelVagas {
+    width: 70%;
+    padding: 20px;
+}
+section.vagas .painelVagas .groupVagas .vaga {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid black;
+    margin: 20px 0;
+}
+section.vagas .painelVagas .groupVagas .vaga h3 {
+    color: rgb(82, 113, 255);
+    margin-bottom: 10px;
+}
+section.vagas .painelVagas .groupVagas .vaga ul {
+    margin-left: 45px;
+}
 `;
+
+
+    
+    
+
+    
+
+
+    
+
+
 
 export const SectionRecrutador = styled.section`
     padding: 20px 0;

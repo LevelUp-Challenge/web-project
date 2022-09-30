@@ -5,6 +5,10 @@ import LandingPage from './Components/LandingPage/LandingPage'
 import Login from './Components/Login/Login';
 import CadastroUsuario from './Components/CadastroUsuario/CadastroUsuario';
 import Sistema from './Components/Sistema/Sistema';
+import Candidato from './Components/Sistema/Candidato/Candidato';
+import Administracao from './Components/Sistema/Administracao/Administracao';
+import Recrutador from './Components/Sistema/Recrutador/Recrutador';
+import BoasVindas from './Components/Sistema/Home/BoasVindas';
 
 
 function App() {
@@ -16,6 +20,10 @@ function App() {
           <Route path='/login' element={<Login />} />
           <Route path='/cadastro-usuario' element={<CadastroUsuario />} />
           <Route path='/levelup' element={<Sistema />} />
+          <Route path='/candidato' element={<Candidato></Candidato>}></Route>
+          <Route path='/adm' element={<Administracao></Administracao>}></Route>
+          <Route path='/recrutador' element={<Recrutador></Recrutador>}></Route>
+          <Route path='/vagas' element={<BoasVindas></BoasVindas>}></Route> 
         </Routes>
       </BrowserRouter>
     </>
