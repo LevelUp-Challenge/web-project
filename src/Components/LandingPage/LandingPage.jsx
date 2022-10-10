@@ -13,8 +13,8 @@ const LandingPage = ()=>{
                 <div className="img">
                     <div className="container">
                         <div className="texto ">
-                            <h1><span>Aproximando</span>pessoas e <span>conexões</span>!</h1>
-                            <p>O sistema que conecta o candidato do recrutador.</p>
+                            <h1><span>Plataforma</span><span>Gamificada</span>!</h1>
+                                        <p>Conectando talentos</p>
                         </div>
                     </div>
                 </div>
@@ -35,7 +35,7 @@ const LandingPage = ()=>{
                     <div className="text">
                         <h2 className="title">Sobre o projeto</h2>
                         <p>Gameficar a plataforma de modo que aproxime o Recrutador do Candidato encaminhando etapas de Soft skills e Hard skills, a fim de avaliar as habilidades tanto pessoal quanto profissional de cada requerente de acordo com os requisitos exigidos pela vaga.</p>
-                        <p>O projeto tem como objetivo criar a plataforma interativa onde o candidato aplica às vagas com testes Gameficados de forma mais afetiva e divertida, deixando o usuário mais interessado e confortável durante todo o processo seletivo</p>
+                        <p>O projeto tem como objetivo criar a plataforma interativa onde o candidato aplica às vagas com testes Gameficados de forma mais afetiva e divertida, deixando o usuário mais interessado e confortável durante todo o processo seletivo.</p>
                         <p></p>
                         <p>Time de Analistas e Desenvolvedores: </p>
                     </div>
