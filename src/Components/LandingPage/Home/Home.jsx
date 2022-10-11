@@ -1,35 +1,12 @@
 import React from 'react'
-import { Header, SectionBanner, SectionSobre, SectionVantagens, SectionFooter } from '../../style/styled'
-import { Link } from 'react-router-dom';
-import Card from './Sobre/Card';
-import Box from './Vantagens/Box';
-import Fiap from '../../img/fiap.png'
-import Ibm from '../../img/ibm.jpg'
+import { SectionSobre, SectionVantagens } from '../../../style/styled'
+import Card from '../Sobre/Card';
+import Box from '../Vantagens/Box';
+
 
 const LandingPage = ()=>{
     return (
         <>
-            <SectionBanner>
-                <div className="img">
-                    <div className="container">
-                        <div className="texto ">
-                            <h1><span>Plataforma</span><span>Gamificada</span>!</h1>
-                                        <p>Conectando talentos</p>
-                        </div>
-                    </div>
-                </div>
-            </SectionBanner>
-            <Header>
-                <div className="container">
-                    <div className="logo">LevelUp Experience</div>
-                    <nav className="menu">
-                        <ul className="menu">
-                            <li><Link to='/'>Página inicial</Link></li>
-                            <li><Link to='/login' target='_blank'><span>Fazer Login</span></Link></li>
-                        </ul>
-                    </nav>
-                </div>
-            </Header>
             <SectionSobre>
                 <div className="container">
                     <div className="text">
@@ -105,17 +82,7 @@ const LandingPage = ()=>{
                     </div>
                 </div>
             </SectionVantagens>
-            <SectionFooter>
-                <div class="container">
-                    <div className="patrocinadores">
-                        <h3>Apoio: </h3>
-                        <div className='imgs'>
-                            <img src={Fiap} alt="" />
-                            <img src={Ibm} alt="" />
-                        </div>
-                    </div>
-                </div>
-            </SectionFooter>
+            
         </>
     )
 };
