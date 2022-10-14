@@ -24,6 +24,7 @@ function App() {
           <Route path='/adm' element={<Administracao></Administracao>}></Route>
           <Route path='/adm/:id' element={<Administracao></Administracao>}></Route>
           <Route path='/recrutador' element={<Recrutador></Recrutador>}></Route>
+          <Route path='/recrutador/:id' element={<Recrutador></Recrutador>}></Route>
           <Route path='/vagas' element={<BoasVindas></BoasVindas>}></Route> 
         </Routes>
       </BrowserRouter>
