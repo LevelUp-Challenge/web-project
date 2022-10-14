@@ -8,7 +8,7 @@ const Administracao = () => {
     const [recrutadores, setRecrutadores] = useState([])
 
     useEffect(()=>{
-        fetch("http://localhost:8080/LevelUpApp/rest/recrutador").then((resp)=>{
+        fetch("http://localhost:8080/LevelUpApp/rest/recrutador/").then((resp)=>{
             return resp.json();
         }).then((resp)=>{
             setRecrutadores(resp)
@@ -20,6 +20,30 @@ const Administracao = () => {
 
     const deleteRecrutador = (id)=>{
         fetch(`http://localhost:8080/LevelUpApp/rest/recrutador${id}`, {
+            method: "delete"
+        }).then(()=>{
+            alert("Excluido com sucesso");
+        }).catch((error)=>{
+            console.log(error);
+            alert("Erro ao excluir")
+        })
+    }
+
+    const [contatoRec, setContatoRec] = useState([])
+
+    useEffect(()=>{
+        fetch("http://localhost:8080/LevelUpApp/rest/contato-recrutador").then((resp)=>{
+            return resp.json();
+        }).then((resp)=>{
+            setContatoRec(resp)
+            console.log(resp)
+        }).then((error)=>{
+            console.log(error)
+        })
+    },  [])
+
+    const deleteContatoRecrutador = (id)=>{
+        fetch(`http://localhost:8080/LevelUpApp/rest/contato-recrutador/${id}`, {
             method: "delete"
         }).then(()=>{
             alert("Excluido com sucesso");
@@ -62,8 +86,20 @@ const Administracao = () => {
                                                 {/* NÃO ESQUECER DE NO ROUTE COLOCAR QUE ELE ESTÁ ESPERANDO UM ID */}
                                                 <button onClick={deleteRecrutador.bind(this, rec.id)}>Excluir</button>
                                             </td>
+                                            
                                         </tr>
-                                    ))
+                                        
+                                    ))                                    
+                                }
+                                {
+                                    contatoRec.map((cont)=>{
+                                        <tr key={cont.id}>
+                                            <td>{cont.email}</td>
+                                            <td>{cont.telefone}</td>
+                                            <td>{cont.ddd}</td>
+                                            <td>{cont.ddi}</td>
+                                        </tr>
+                                    })
                                 }
                             </tbody>
                         </table>

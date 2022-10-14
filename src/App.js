@@ -21,6 +21,7 @@ function App() {
           <Route path='/cadastro-usuario' element={<CadastroUsuario />} />
           <Route path='/levelup' element={<Sistema />} />
           <Route path='/candidato' element={<Candidato></Candidato>}></Route>
+          <Route path='/adm' element={<Administracao></Administracao>}></Route>
           <Route path='/adm/:id' element={<Administracao></Administracao>}></Route>
           <Route path='/recrutador' element={<Recrutador></Recrutador>}></Route>
           <Route path='/vagas' element={<BoasVindas></BoasVindas>}></Route> 

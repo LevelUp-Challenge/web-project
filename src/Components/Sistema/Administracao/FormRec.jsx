@@ -12,6 +12,10 @@ const CadastroRec = ()=> {
         
     })
 
+    const [novoCont, setNovoCont] = useState({
+        
+    })
+
     let metodo = 'post'
 
     if (id) {
@@ -20,6 +24,10 @@ const CadastroRec = ()=> {
 
     const handleChange = e =>{
         setNovoRec({...novoRec, [e.target.name]:e.target.value})
+    }
+
+    const handleChange2 = e =>{
+        setNovoRec({...novoCont, [e.target.name]:e.target.value})
     }
 
     const handleSubmit = e =>{
@@ -35,6 +43,17 @@ const CadastroRec = ()=> {
             alert("Inserido com sucesso!")
             window.location = "/adm"
         })
+
+        fetch(`http://localhost:8080/LevelUpApp/rest/contato-recrutador/${id ? id : ""}`,{
+            method:metodo,
+            headers:{
+                "Content-Type": "application/json"
+            },
+            body:JSON.stringify(novoCont)
+        }).then(()=>{
+            alert("Inserido com sucesso!")
+            window.location = "/adm"
+        })
     }
 
     useEffect(()=>{
@@ -45,8 +64,16 @@ const CadastroRec = ()=> {
             }).then(data =>{
                 setNovoRec(data)
             })
+
+            fetch(`http://localhost:8080/LevelUpApp/rest/contato-recrutador/${id}`)
+            .then((resp)=>{
+                return (resp.json())
+            }).then(data =>{
+                setNovoCont(data)
+            })
         }
     }, [id])
+
 
   return (
     <form onSubmit={handleSubmit}>
@@ -97,6 +124,54 @@ const CadastroRec = ()=> {
                 required 
             />
             <label htmlFor='areas_recrutamento'>Areas de recrutamento</label>
+        </DivinputSingle>
+        <DivinputSingle>
+            <input 
+                type='email'
+                id='email'
+                name='email'
+                className='inputText bgWhite'
+                value={novoCont.email}
+                onChange={handleChange}
+                required 
+            />
+            <label htmlFor='email'>Email</label>
+        </DivinputSingle>
+        <DivinputSingle>
+            <input 
+                type='number'
+                id='ddd'
+                name='ddd'
+                className='inputText bgWhite'
+                value={novoCont.ddd}
+                onChange={handleChange}
+                required 
+            />
+            <label htmlFor='ddd'>DDD</label>
+        </DivinputSingle>
+        <DivinputSingle>
+            <input 
+                type='number'
+                id='ddi'
+                name='ddi'
+                className='inputText bgWhite'
+                value={novoCont.ddi}
+                onChange={handleChange}
+                required 
+            />
+            <label htmlFor='ddi'>DDI</label>
+        </DivinputSingle>
+        <DivinputSingle>
+            <input 
+                type='number'
+                id='telefone'
+                name='telefone'
+                className='inputText bgWhite'
+                value={novoCont.telefone}
+                onChange={handleChange}
+                required 
+            />
+            <label htmlFor='telefone'>Telefone</label>
         </DivinputSingle>
         <button>Enviar</button>
     </form>
