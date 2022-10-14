@@ -8,7 +8,7 @@ const Administracao = () => {
     const [recrutadores, setRecrutadores] = useState([])
 
     useEffect(()=>{
-        fetch("http://localhost:8080/LevelUpApp/rest/recrutador/").then((resp)=>{
+        fetch("http://localhost:8080/LevelUpApp/rest/recrutador").then((resp)=>{
             return resp.json();
         }).then((resp)=>{
             setRecrutadores(resp)
@@ -19,7 +19,7 @@ const Administracao = () => {
     },  [])
 
     const deleteRecrutador = (id)=>{
-        fetch(`http://localhost:8080/LevelUpApp/rest/recrutador${id}`, {
+        fetch(`http://localhost:8080/LevelUpApp/rest/recrutador/${id}`, {
             method: "delete"
         }).then(()=>{
             alert("Excluido com sucesso");
@@ -61,7 +61,7 @@ const Administracao = () => {
                         <FormRec />
                     </div>
                     <div className="box">
-                        <h3>Recrutadores</h3>
+                        <h3>Lista de Recrutadores</h3>
                         <table border={1}>
                             <thead>
                                 <tr>
