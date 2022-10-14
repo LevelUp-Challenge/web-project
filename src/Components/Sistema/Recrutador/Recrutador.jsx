@@ -1,4 +1,6 @@
 import React from "react";
+import { useEffect } from "react";
+import { useState } from "react";
 import { SectionRecrutador } from "../../../style/styled";
 import CheckBox from "../../Form/CheckBox";
 import Input from "../../Form/Input";
@@ -6,6 +8,20 @@ import Submit from "../../Form/Submit";
 import TextArea from "../../Form/TextArea";
 
 const Recrutador = ()=>{
+
+    const [recrutadores, setRecrutadores] = useState([])
+
+    useEffect(()=>{
+        fetch("http://localhost:8080/LevelUpApp/rest/recrutador").then((resp)=>{
+            return resp.json();
+        }).then((resp)=>{
+            setRecrutadores(resp)
+            console.log(resp)
+        }).then((error)=>{
+            console.log(error)
+        })
+    },  [])
+
     return(
         <SectionRecrutador>
             <div className="container">
@@ -80,6 +96,10 @@ const Recrutador = ()=>{
                             valor='Enviar'
                         />
                     </form>
+                </div>
+                <div className="box">
+                    <h3>Recrutadores</h3>
+
                 </div>
             </div>
         </SectionRecrutador>
