@@ -17,8 +17,8 @@ const Conteudo = (props)=>{
                 </nav>
                 <div className="clear"></div>
             </header>
-            {/* <BoasVindas /> */}
-            <Recrutador />
+            <BoasVindas />
+            {/* <Recrutador /> */}
             {/* <Candidato /> */}
             {/* <Administracao /> */}
             {/* {retornaPagina(props)} */}

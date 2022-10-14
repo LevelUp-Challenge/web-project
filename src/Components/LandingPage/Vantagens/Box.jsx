@@ -4,9 +4,9 @@ import { DivBoxes } from '../../../style/styled';
 const Box = (props)=>{
 
     function lado(props) {
-        if (props.lado == 'left') {
+        if (props.lado === 'left') {
             return 'box left'
-        } else if (props.lado == 'right') {
+        } else if (props.lado === 'right') {
             return 'box right'
         }
     }

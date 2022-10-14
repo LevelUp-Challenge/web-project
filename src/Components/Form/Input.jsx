@@ -4,9 +4,9 @@ import { DivinputSingle } from '../../style/styled';
 const Input = (props)=>{
 
     function background(props) {
-        if (props.cor == 'black') {
+        if (props.cor === 'black') {
             return 'inputText bgBlack'
-        }else if (props.cor == 'white') {
+        }else if (props.cor === 'white') {
             return 'inputText bgWhite'
         }
     }
