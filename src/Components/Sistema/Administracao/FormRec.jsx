@@ -173,7 +173,7 @@ const CadastroRec = ()=> {
             />
             <label htmlFor='telefone'>Telefone</label>
         </DivinputSingle>
-        <button>Enviar</button>
+        <button onClick={handleSubmit}>Enviar</button>
     </form>
   )
 }
