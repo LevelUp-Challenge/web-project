@@ -6,7 +6,7 @@ import ImgGabriel from '../img/gabriel.jpg'
 import ImgNathalia from '../img/nathalia.png'
 
 // *-- Estilização da Landing Page
-export const Header = styled.header`
+export const SectionHeader = styled.header`
     background-color: transparent;
     padding: 15px 2%;
     /* position: fixed; */
@@ -600,4 +600,41 @@ export const SectionCadastro = styled.section`
             }
         }
     }
-`
+`;
+
+export const SectionVagas = styled.section`
+    margin: 25px 0;
+    .flex {
+        display: flex;
+        flex-direction: column;
+        gap: 20px 0;
+    }
+`;
+
+export const DivVagaSingle = styled.div`
+    background-color: black;
+    border: 1px solid var(--roxo);
+    width: 100;
+    padding: 20px;
+    h3.titulo {
+        color: white;
+        padding-bottom: 20px;
+    }
+    p {
+        color: #ccc;
+        b {
+            color: white;
+        }
+        ul {
+            padding-left: 25px;
+        }
+    }
+    button {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 10px 20px;
+        cursor: pointer;
+        background-color: var(--roxo);
+    }
+`;

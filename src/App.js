@@ -1,32 +1,21 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route} from 'react-router-dom';
+
 import './App.css'
-import LandingPage from './Components/LandingPage/LandingPage'
-import Login from './Components/Login/Login';
-import CadastroUsuario from './Components/CadastroUsuario/CadastroUsuario';
-import Sistema from './Components/Sistema/Sistema';
-import Candidato from './Components/Sistema/Candidato/Candidato';
-import Administracao from './Components/Sistema/Administracao/Administracao';
-import Recrutador from './Components/Sistema/Recrutador/Recrutador';
-import BoasVindas from './Components/Sistema/Home/BoasVindas';
+import Footer from './Components/LandingPage/Footer/Footer';
+import Header from './Components/LandingPage/Header/Header';
+import Home from './Components/LandingPage/Home/Home'
+import Vagas from './Components/LandingPage/Vagas/Vagas';
 
 
 function App() {
   return (
     <>
       <BrowserRouter>
+        <Header />
         <Routes>
-          <Route path='/' element={<LandingPage />} />
-          <Route path='/login' element={<Login />} />
-          <Route path='/cadastro-usuario' element={<CadastroUsuario />} />
-          <Route path='/levelup' element={<Sistema />} />
-          <Route path='/candidato' element={<Candidato></Candidato>}></Route>
-          <Route path='/adm' element={<Administracao></Administracao>}></Route>
-          <Route path='/adm/:id' element={<Administracao></Administracao>}></Route>
-          <Route path='/recrutador' element={<Recrutador></Recrutador>}></Route>
-          <Route path='/recrutador/:id' element={<Recrutador></Recrutador>}></Route>
-          <Route path='/vagas' element={<BoasVindas></BoasVindas>}></Route> 
+
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   );
