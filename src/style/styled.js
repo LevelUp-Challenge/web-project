@@ -468,17 +468,6 @@ section.vagas .painelVagas .groupVagas .vaga ul {
 }
 `;
 
-
-    
-    
-
-    
-
-
-    
-
-
-
 export const SectionRecrutador = styled.section`
     padding: 20px 0;
     .box {

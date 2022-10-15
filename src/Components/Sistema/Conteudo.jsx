@@ -6,7 +6,7 @@ import Candidato from "./Candidato/Candidato";
 import BoasVindas from "./Home/BoasVindas";
 import Recrutador from "./Recrutador/Recrutador";
 
-const Conteudo = ()=>{
+const Conteudo = (props)=>{
     return(
         <MainConteudo>
             <header>
@@ -15,12 +15,13 @@ const Conteudo = ()=>{
                         <li><Link to='/login'>Sair</Link></li>
                     </ul>
                 </nav>
-                <div class="clear"></div>
+                <div className="clear"></div>
             </header>
-            {/* <BoasVindas /> */}
-            <Recrutador />
+            <BoasVindas />
+            {/* <Recrutador /> */}
             {/* <Candidato /> */}
             {/* <Administracao /> */}
+            {/* {retornaPagina(props)} */}
         </MainConteudo>
     )
 }

@@ -7,7 +7,7 @@ const Menu = ()=>{
         <SectionMenu>
             <nav>
                     <ul>
-                        <li><Link to='/'>Home</Link></li>
+                        <li><Link to='/levelup'>Home</Link></li>
                         <li><Link to='/recrutador'>Recrutador</Link></li>
                         <li><Link to='/candidato'>Candidato</Link></li>
                         <li><Link to='/adm'>Administração</Link></li>
