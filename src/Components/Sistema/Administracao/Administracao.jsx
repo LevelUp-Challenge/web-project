@@ -1,29 +1,29 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { SectionAdministracao } from "../../../style/styled";
+import { SectionAdministracao, DivLista } from "../../../style/styled";
 import FormRec from "./FormRec";
 
 const Administracao = () => {
 
     const [recrutadores, setRecrutadores] = useState([])
 
-    useEffect(()=>{
-        fetch("http://localhost:8080/LevelUpApp/rest/recrutador").then((resp)=>{
+    useEffect(() => {
+        fetch("http://localhost:8080/LevelUpApp/rest/recrutador").then((resp) => {
             return resp.json();
-        }).then((resp)=>{
+        }).then((resp) => {
             setRecrutadores(resp)
             console.log(resp)
-        }).then((error)=>{
+        }).then((error) => {
             console.log(error)
         })
-    },  [])
+    }, [])
 
-    const deleteRecrutador = (id)=>{
+    const deleteRecrutador = (id) => {
         fetch(`http://localhost:8080/LevelUpApp/rest/recrutador/${id}`, {
             method: "delete"
-        }).then(()=>{
+        }).then(() => {
             alert("Excluido com sucesso");
-        }).catch((error)=>{
+        }).catch((error) => {
             console.log(error);
             alert("Erro ao excluir")
         })
@@ -31,31 +31,33 @@ const Administracao = () => {
 
     const [contatoRec, setContatoRec] = useState([])
 
-    useEffect(()=>{
-        fetch("http://localhost:8080/LevelUpApp/rest/contato-recrutador").then((resp)=>{
+    useEffect(() => {
+        fetch("http://localhost:8080/LevelUpApp/rest/contato-recrutador").then((resp) => {
             return resp.json();
-        }).then((resp)=>{
+        }).then((resp) => {
             setContatoRec(resp)
             console.log(resp)
-        }).then((error)=>{
+        }).then((error) => {
             console.log(error)
         })
-    },  [])
+    }, [])
 
-    const deleteContatoRecrutador = (id)=>{
+    const deleteContatoRecrutador = (id) => {
         fetch(`http://localhost:8080/LevelUpApp/rest/contato-recrutador/${id}`, {
             method: "delete"
-        }).then(()=>{
+        }).then(() => {
             alert("Excluido com sucesso");
-        }).catch((error)=>{
+        }).catch((error) => {
             console.log(error);
             alert("Erro ao excluir")
         })
     }
 
     return (
-        <SectionAdministracao>
-            <div className="container">
+        <DivLista>
+
+            <SectionAdministracao>
+                <div className="container">
                     <div className="box">
                         <h3>Cadastro de Recrutadores</h3>
                         <FormRec />
@@ -75,24 +77,24 @@ const Administracao = () => {
                             </thead>
                             <tbody>
                                 {
-                                    recrutadores.map((rec)=>(
+                                    recrutadores.map((rec) => (
                                         <tr key={rec.id}>
                                             <td>{rec.nome}</td>
                                             <td>{rec.login}</td>
                                             <td>{rec.senha}</td>
                                             <td>{rec.areas_recrutamento}</td>
                                             <td>
-                                                <Link to={`/adm/${rec.id}`}>Editar</Link> 
+                                                <Link to={`/adm/${rec.id}`}>Editar</Link>
                                                 {/* NÃO ESQUECER DE NO ROUTE COLOCAR QUE ELE ESTÁ ESPERANDO UM ID */}
                                                 <button onClick={deleteRecrutador.bind(this, rec.id)}>Excluir</button>
                                             </td>
-                                            
+
                                         </tr>
-                                        
-                                    ))                                    
+
+                                    ))
                                 }
                                 {
-                                    contatoRec.map((cont)=>{
+                                    contatoRec.map((cont) => {
                                         <tr key={cont.id}>
                                             <td>{cont.email}</td>
                                             <td>{cont.telefone}</td>
@@ -105,7 +107,8 @@ const Administracao = () => {
                         </table>
                     </div>
                 </div>
-        </SectionAdministracao>
+            </SectionAdministracao>
+        </DivLista>
     )
 }
 

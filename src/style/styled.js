@@ -240,7 +240,7 @@ export const SectionLogin = styled.section`
             top: 50%;
             transform: translate(-50%, -50%);
             a {
-                font-size: 0.8em;
+                font-size: 0.9em;
                 color: blue;
             }
         }
@@ -601,3 +601,60 @@ export const SectionCadastro = styled.section`
         }
     }
 `
+export const DivLista = styled.div`
+
+    width: 70%; margin: auto; font-family: Arial; padding-top: 30px;
+  
+    a{text-decoration: none; padding: 10px 15px; margin-bottom: 20px;
+  
+      background-color: darkcyan; color: white; display: inline-block;
+  
+    }
+  
+    table {width: 100%; margin: auto;}
+  
+    thead tr {background-color: #084EDC; color: white;}
+  
+    thead tr th{padding: 10px;}
+  
+  
+  
+    tbody tr:nth-child(2n+2){background-color: #ccc;}
+  
+    tbody tr td{background-color: none; margin-bottom: 5px; color: #525252; text-align: center; font-weight: bold;}
+  
+    tbody tr td button{color: red; background-color: none; border: none;}
+  
+  
+  
+    tfoot tr td{text-align: center; background-color: #084EDC; color:white; font-weight:bold;}
+    `
+
+    export const DivListas = styled.div`
+       width: 70%; margin: auto; font-family: Arial; padding-top: 30px;
+  
+    a{text-decoration: none; padding: 10px 15px; margin-bottom: 20px;
+
+    background-color: darkcyan; color: white; display: inline-block;
+
+  }
+
+    table {width: 100%; margin: auto;}
+
+    thead tr {background-color: #084EDC; color: white;}
+
+    thead tr th{padding: 10px;}
+
+
+
+    tbody tr:nth-child(2n+2){background-color: #ccc;}
+
+    tbody tr td{background-color: none; margin-bottom: 5px; color: #525252; text-align: center; font-weight: bold;}
+
+    tbody tr td button{color: red; background-color: none; border: none;}
+
+
+
+    tfoot tr td{text-align: center; background-color: #084EDC; color:white; font-weight:bold;}
+
+    `

@@ -9,6 +9,8 @@ import Candidato from './Components/Sistema/Candidato/Candidato';
 import Administracao from './Components/Sistema/Administracao/Administracao';
 import Recrutador from './Components/Sistema/Recrutador/Recrutador';
 import BoasVindas from './Components/Sistema/Home/BoasVindas';
+import ListaCandidatos from './Components/testesAPI/ListaCandidatos';
+
 
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
           <Route path='/recrutador' element={<Recrutador></Recrutador>}></Route>
           <Route path='/recrutador/:id' element={<Recrutador></Recrutador>}></Route>
           <Route path='/vagas' element={<BoasVindas></BoasVindas>}></Route> 
+          <Route path='/ListaCandidatos' element={<ListaCandidatos></ListaCandidatos>}></Route>
+
         </Routes>
       </BrowserRouter>
     </>

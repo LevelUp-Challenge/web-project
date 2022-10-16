@@ -12,6 +12,7 @@ const Menu = ()=>{
                         <li><Link to='/candidato'>Candidato</Link></li>
                         <li><Link to='/adm'>Administração</Link></li>
                         <li><Link to='/vagas'>Vagas </Link></li>
+                        <li><Link to='/ListaCandidatos'>Lista do Sistema </Link></li>
                     </ul>
                 </nav>
         </SectionMenu>

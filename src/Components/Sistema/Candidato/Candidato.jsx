@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { SectionCandidato } from "../../../style/styled";
+import { SectionCandidato, DivLista } from "../../../style/styled";
 import CheckBox from "../../Form/CheckBox";
 import Input from "../../Form/Input";
 import Submit from "../../Form/Submit";
@@ -56,11 +56,12 @@ const Candidato = () => {
     }
 
     return (
-        <SectionCandidato>
+        <DivLista>
             <div className="container">
                 <div className="box">
                     <h3>Cadastro de Certificados</h3>
                     <FormCerti />
+
                     <table border={1}>
                             <thead>
                                 <tr>
@@ -123,7 +124,7 @@ const Candidato = () => {
                         </table>
                 </div>
             </div>
-        </SectionCandidato>
+        </DivLista>
     )
 }
 

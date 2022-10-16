@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { SectionRecrutador } from "../../../style/styled";
+import { SectionRecrutador, DivLista } from "../../../style/styled";
 import CheckBox from "../../Form/CheckBox";
 import Input from "../../Form/Input";
 import Submit from "../../Form/Submit";
@@ -24,7 +24,7 @@ const Recrutador = ()=>{
             console.log(error)
         })
 
-        fetch("http://localhost:8080/LevelUpApp/rest/recrutador").then((resp)=>{
+        fetch("http://localhost:8080/LevelUpApp/rest/Desafio/").then((resp)=>{
             return resp.json();
         }).then((resp)=>{
             setDesafios(resp)
@@ -57,6 +57,8 @@ const Recrutador = ()=>{
     }
 
     return(
+        <DivLista>
+
         <SectionRecrutador>
             <div className="container">
                 <div className="box">
@@ -102,8 +104,8 @@ const Recrutador = ()=>{
                                             
                                         </tr>
                                         
-                                    ))                                    
-                                }
+                                        ))                                    
+                                    }
                             </tbody>
                         </table>
                     </div>
@@ -139,8 +141,8 @@ const Recrutador = ()=>{
                                             
                                         </tr>
                                         
-                                    ))                                    
-                                }
+                                        ))                                    
+                                    }
                             </tbody>
                         </table>
                     </div>
@@ -148,6 +150,7 @@ const Recrutador = ()=>{
                 
             </div>
         </SectionRecrutador>
+                                    </DivLista>
     )
 }
 

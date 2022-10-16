@@ -74,7 +74,7 @@ const LandingPage = ()=>{
             <div className="ondaPreta"></div>
             <SectionVantagens>
                 <div className="container">
-                    <h2 className="title">Vantagens</h2>
+                    <h2 className="title"><span>Pilares</span></h2>
                     <div className="boxs">
                         <Box 
                             lado='left' 
